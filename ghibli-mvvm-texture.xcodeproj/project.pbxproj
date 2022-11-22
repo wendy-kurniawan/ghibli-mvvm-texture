@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C1095F7292BEE8300639F42 /* MovieUseCaseSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1095F6292BEE8300639F42 /* MovieUseCaseSpy.swift */; };
+		0C1095FB292BF68200639F42 /* MovieRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1095FA292BF68200639F42 /* MovieRoutes.swift */; };
+		0C1095FE292BFE9700639F42 /* MovieCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1095FD292BFE9700639F42 /* MovieCellNode.swift */; };
+		0C109601292C004900639F42 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C109600292C004900639F42 /* Typography.swift */; };
+		0CAF747C292BA43900532887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF747B292BA43900532887 /* AppDelegate.swift */; };
+		0CAF747E292BA43900532887 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF747D292BA43900532887 /* SceneDelegate.swift */; };
+		0CAF7480292BA43900532887 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF747F292BA43900532887 /* MovieViewController.swift */; };
+		0CAF7483292BA43900532887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF7481292BA43900532887 /* Main.storyboard */; };
+		0CAF7485292BA43A00532887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF7484292BA43A00532887 /* Assets.xcassets */; };
+		0CAF7488292BA43A00532887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAF7486292BA43A00532887 /* LaunchScreen.storyboard */; };
+		0CAF749D292BA43A00532887 /* ghibli_mvvm_textureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF749C292BA43A00532887 /* ghibli_mvvm_textureUITests.swift */; };
+		0CAF749F292BA43A00532887 /* ghibli_mvvm_textureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF749E292BA43A00532887 /* ghibli_mvvm_textureUITestsLaunchTests.swift */; };
+		0CAF74B3292BA56500532887 /* MovieViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF74B2292BA56500532887 /* MovieViewModelTests.swift */; };
+		0CCD3455292BC283009C5EEA /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD3454292BC283009C5EEA /* MovieViewModel.swift */; };
+		0CCD3458292BC2B8009C5EEA /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD3457292BC2B8009C5EEA /* ViewModelType.swift */; };
+		0CCD345D292BC716009C5EEA /* MovieUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD345C292BC716009C5EEA /* MovieUseCase.swift */; };
+		0CCD345F292BC857009C5EEA /* DefaultMovieUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD345E292BC857009C5EEA /* DefaultMovieUseCase.swift */; };
+		0CCD3463292BC8E2009C5EEA /* RemoteMovieLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD3462292BC8E2009C5EEA /* RemoteMovieLoader.swift */; };
+		0CCD3465292BC91D009C5EEA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD3464292BC91D009C5EEA /* Movie.swift */; };
+		0CCD3467292BCB61009C5EEA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD3466292BCB61009C5EEA /* NetworkError.swift */; };
+		0CCD3469292BD94D009C5EEA /* MovieLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD3468292BD94D009C5EEA /* MovieLoader.swift */; };
+		0CCD346E292BE091009C5EEA /* FakeMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD346D292BE091009C5EEA /* FakeMovies.swift */; };
+		0CCD3473292BE42D009C5EEA /* MovieUseCaseStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCD3472292BE42D009C5EEA /* MovieUseCaseStub.swift */; };
+		5A699AB865A68506C6B8C106 /* Pods_ghibli_mvvm_textureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57DF6B298E7CE450CA0713F /* Pods_ghibli_mvvm_textureTests.framework */; };
+		95B714AF491918CDD6204204 /* Pods_ghibli_mvvm_texture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7C5F2C7D2945DCEEC2B0FA /* Pods_ghibli_mvvm_texture.framework */; };
+		A0386CD7B16D2BA028C5A47A /* Pods_ghibli_mvvm_texture_ghibli_mvvm_textureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAFD9DDA4173DF48AF1438CE /* Pods_ghibli_mvvm_texture_ghibli_mvvm_textureUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CAF748F292BA43A00532887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CAF7470292BA43900532887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CAF7477292BA43900532887;
+			remoteInfo = "ghibli-mvvm-texture";
+		};
+		0CAF7499292BA43A00532887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CAF7470292BA43900532887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CAF7477292BA43900532887;
+			remoteInfo = "ghibli-mvvm-texture";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C1095F6292BEE8300639F42 /* MovieUseCaseSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUseCaseSpy.swift; sourceTree = "<group>"; };
+		0C1095FA292BF68200639F42 /* MovieRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRoutes.swift; sourceTree = "<group>"; };
+		0C1095FD292BFE9700639F42 /* MovieCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellNode.swift; sourceTree = "<group>"; };
+		0C109600292C004900639F42 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		0CAF7478292BA43900532887 /* ghibli-mvvm-texture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ghibli-mvvm-texture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAF747B292BA43900532887 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CAF747D292BA43900532887 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0CAF747F292BA43900532887 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		0CAF7482292BA43900532887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CAF7484292BA43A00532887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CAF7487292BA43A00532887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CAF7489292BA43A00532887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CAF748E292BA43A00532887 /* ghibli-mvvm-textureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ghibli-mvvm-textureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAF7498292BA43A00532887 /* ghibli-mvvm-textureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ghibli-mvvm-textureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAF749C292BA43A00532887 /* ghibli_mvvm_textureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghibli_mvvm_textureUITests.swift; sourceTree = "<group>"; };
+		0CAF749E292BA43A00532887 /* ghibli_mvvm_textureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ghibli_mvvm_textureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0CAF74B2292BA56500532887 /* MovieViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModelTests.swift; sourceTree = "<group>"; };
+		0CCD3454292BC283009C5EEA /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		0CCD3457292BC2B8009C5EEA /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		0CCD345C292BC716009C5EEA /* MovieUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUseCase.swift; sourceTree = "<group>"; };
+		0CCD345E292BC857009C5EEA /* DefaultMovieUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMovieUseCase.swift; sourceTree = "<group>"; };
+		0CCD3462292BC8E2009C5EEA /* RemoteMovieLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMovieLoader.swift; sourceTree = "<group>"; };
+		0CCD3464292BC91D009C5EEA /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		0CCD3466292BCB61009C5EEA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		0CCD3468292BD94D009C5EEA /* MovieLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieLoader.swift; sourceTree = "<group>"; };
+		0CCD346D292BE091009C5EEA /* FakeMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeMovies.swift; sourceTree = "<group>"; };
+		0CCD3472292BE42D009C5EEA /* MovieUseCaseStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieUseCaseStub.swift; sourceTree = "<group>"; };
+		800A70F3CA67240A95513D0C /* Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests.release.xcconfig"; path = "Target Support Files/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8B7C5F2C7D2945DCEEC2B0FA /* Pods_ghibli_mvvm_texture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ghibli_mvvm_texture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFD9DDA4173DF48AF1438CE /* Pods_ghibli_mvvm_texture_ghibli_mvvm_textureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ghibli_mvvm_texture_ghibli_mvvm_textureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57DF6B298E7CE450CA0713F /* Pods_ghibli_mvvm_textureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ghibli_mvvm_textureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C17E01C0AAB67B249DB1D9DA /* Pods-ghibli-mvvm-textureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ghibli-mvvm-textureTests.release.xcconfig"; path = "Target Support Files/Pods-ghibli-mvvm-textureTests/Pods-ghibli-mvvm-textureTests.release.xcconfig"; sourceTree = "<group>"; };
+		CF08235AA6B2973E01F13FC9 /* Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests.debug.xcconfig"; path = "Target Support Files/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E52D6DDD9BB6EECA90F5A5C2 /* Pods-ghibli-mvvm-texture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ghibli-mvvm-texture.debug.xcconfig"; path = "Target Support Files/Pods-ghibli-mvvm-texture/Pods-ghibli-mvvm-texture.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0089AD7DB0C05AE3FF1F82 /* Pods-ghibli-mvvm-texture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ghibli-mvvm-texture.release.xcconfig"; path = "Target Support Files/Pods-ghibli-mvvm-texture/Pods-ghibli-mvvm-texture.release.xcconfig"; sourceTree = "<group>"; };
+		FE500CE116CC8E72DF1F4420 /* Pods-ghibli-mvvm-textureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ghibli-mvvm-textureTests.debug.xcconfig"; path = "Target Support Files/Pods-ghibli-mvvm-textureTests/Pods-ghibli-mvvm-textureTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CAF7475292BA43900532887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B714AF491918CDD6204204 /* Pods_ghibli_mvvm_texture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAF748B292BA43A00532887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A699AB865A68506C6B8C106 /* Pods_ghibli_mvvm_textureTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAF7495292BA43A00532887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0386CD7B16D2BA028C5A47A /* Pods_ghibli_mvvm_texture_ghibli_mvvm_textureUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C1095F5292BEE7900639F42 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				0C1095F6292BEE8300639F42 /* MovieUseCaseSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		0C1095F8292BF5CE00639F42 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				0CCD3468292BD94D009C5EEA /* MovieLoader.swift */,
+				0CCD3462292BC8E2009C5EEA /* RemoteMovieLoader.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		0C1095F9292BF5D800639F42 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				0CCD3466292BCB61009C5EEA /* NetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		0C1095FC292BFE8A00639F42 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0C1095FD292BFE9700639F42 /* MovieCellNode.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0C1095FF292C003500639F42 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0C109600292C004900639F42 /* Typography.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0CAF746F292BA43900532887 = {
+			isa = PBXGroup;
+			children = (
+				0CAF747A292BA43900532887 /* ghibli-mvvm-texture */,
+				0CAF7491292BA43A00532887 /* ghibli-mvvm-textureTests */,
+				0CAF749B292BA43A00532887 /* ghibli-mvvm-textureUITests */,
+				0CAF7479292BA43900532887 /* Products */,
+				6608305F2A7F0D007C7DCA08 /* Pods */,
+				C0824755FAE29A973B2E1F3F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0CAF7479292BA43900532887 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF7478292BA43900532887 /* ghibli-mvvm-texture.app */,
+				0CAF748E292BA43A00532887 /* ghibli-mvvm-textureTests.xctest */,
+				0CAF7498292BA43A00532887 /* ghibli-mvvm-textureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CAF747A292BA43900532887 /* ghibli-mvvm-texture */ = {
+			isa = PBXGroup;
+			children = (
+				0C1095FF292C003500639F42 /* UI */,
+				0CCD345B292BC702009C5EEA /* Networking */,
+				0CCD3456292BC2A7009C5EEA /* Contracts */,
+				0CAF74AC292BA4DF00532887 /* Domains */,
+				0CAF74AB292BA4DC00532887 /* Scenes */,
+				0CAF7484292BA43A00532887 /* Assets.xcassets */,
+				0CAF747B292BA43900532887 /* AppDelegate.swift */,
+				0CAF747D292BA43900532887 /* SceneDelegate.swift */,
+				0CAF7481292BA43900532887 /* Main.storyboard */,
+				0CAF7486292BA43A00532887 /* LaunchScreen.storyboard */,
+				0CAF7489292BA43A00532887 /* Info.plist */,
+			);
+			path = "ghibli-mvvm-texture";
+			sourceTree = "<group>";
+		};
+		0CAF7491292BA43A00532887 /* ghibli-mvvm-textureTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C1095F5292BEE7900639F42 /* Spies */,
+				0CCD3471292BE417009C5EEA /* Stubs */,
+				0CCD346A292BE00C009C5EEA /* Fakes */,
+				0CCD3459292BC5D4009C5EEA /* Scenes */,
+			);
+			path = "ghibli-mvvm-textureTests";
+			sourceTree = "<group>";
+		};
+		0CAF749B292BA43A00532887 /* ghibli-mvvm-textureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF749C292BA43A00532887 /* ghibli_mvvm_textureUITests.swift */,
+				0CAF749E292BA43A00532887 /* ghibli_mvvm_textureUITestsLaunchTests.swift */,
+			);
+			path = "ghibli-mvvm-textureUITests";
+			sourceTree = "<group>";
+		};
+		0CAF74AB292BA4DC00532887 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF74AD292BA51000532887 /* Movie */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0CAF74AC292BA4DF00532887 /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				0CCD3461292BC862009C5EEA /* Models */,
+				0CCD345E292BC857009C5EEA /* DefaultMovieUseCase.swift */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		0CAF74AD292BA51000532887 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				0C1095FC292BFE8A00639F42 /* Cells */,
+				0CAF747F292BA43900532887 /* MovieViewController.swift */,
+				0CCD3454292BC283009C5EEA /* MovieViewModel.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		0CCD3456292BC2A7009C5EEA /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				0CCD3457292BC2B8009C5EEA /* ViewModelType.swift */,
+				0CCD345C292BC716009C5EEA /* MovieUseCase.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		0CCD3459292BC5D4009C5EEA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF74B2292BA56500532887 /* MovieViewModelTests.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0CCD345B292BC702009C5EEA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0C1095F9292BF5D800639F42 /* Error */,
+				0C1095F8292BF5CE00639F42 /* Loader */,
+				0C1095FA292BF68200639F42 /* MovieRoutes.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0CCD3461292BC862009C5EEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CCD3464292BC91D009C5EEA /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0CCD346A292BE00C009C5EEA /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				0CCD346D292BE091009C5EEA /* FakeMovies.swift */,
+			);
+			path = Fakes;
+			sourceTree = "<group>";
+		};
+		0CCD3471292BE417009C5EEA /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				0CCD3472292BE42D009C5EEA /* MovieUseCaseStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		6608305F2A7F0D007C7DCA08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E52D6DDD9BB6EECA90F5A5C2 /* Pods-ghibli-mvvm-texture.debug.xcconfig */,
+				FA0089AD7DB0C05AE3FF1F82 /* Pods-ghibli-mvvm-texture.release.xcconfig */,
+				CF08235AA6B2973E01F13FC9 /* Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests.debug.xcconfig */,
+				800A70F3CA67240A95513D0C /* Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests.release.xcconfig */,
+				FE500CE116CC8E72DF1F4420 /* Pods-ghibli-mvvm-textureTests.debug.xcconfig */,
+				C17E01C0AAB67B249DB1D9DA /* Pods-ghibli-mvvm-textureTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0824755FAE29A973B2E1F3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B7C5F2C7D2945DCEEC2B0FA /* Pods_ghibli_mvvm_texture.framework */,
+				AAFD9DDA4173DF48AF1438CE /* Pods_ghibli_mvvm_texture_ghibli_mvvm_textureUITests.framework */,
+				B57DF6B298E7CE450CA0713F /* Pods_ghibli_mvvm_textureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CAF7477292BA43900532887 /* ghibli-mvvm-texture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CAF74A2292BA43A00532887 /* Build configuration list for PBXNativeTarget "ghibli-mvvm-texture" */;
+			buildPhases = (
+				E2A7CA5B8D9E23EFDA834032 /* [CP] Check Pods Manifest.lock */,
+				0CAF7474292BA43900532887 /* Sources */,
+				0CAF7475292BA43900532887 /* Frameworks */,
+				0CAF7476292BA43900532887 /* Resources */,
+				D501B8E79C656E36D781EC56 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ghibli-mvvm-texture";
+			productName = "ghibli-mvvm-texture";
+			productReference = 0CAF7478292BA43900532887 /* ghibli-mvvm-texture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CAF748D292BA43A00532887 /* ghibli-mvvm-textureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CAF74A5292BA43A00532887 /* Build configuration list for PBXNativeTarget "ghibli-mvvm-textureTests" */;
+			buildPhases = (
+				9C1ADF10A6C90CBCC3654644 /* [CP] Check Pods Manifest.lock */,
+				0CAF748A292BA43A00532887 /* Sources */,
+				0CAF748B292BA43A00532887 /* Frameworks */,
+				0CAF748C292BA43A00532887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CAF7490292BA43A00532887 /* PBXTargetDependency */,
+			);
+			name = "ghibli-mvvm-textureTests";
+			productName = "ghibli-mvvm-textureTests";
+			productReference = 0CAF748E292BA43A00532887 /* ghibli-mvvm-textureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CAF7497292BA43A00532887 /* ghibli-mvvm-textureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CAF74A8292BA43A00532887 /* Build configuration list for PBXNativeTarget "ghibli-mvvm-textureUITests" */;
+			buildPhases = (
+				67E045BC24CA9DC64FFF2269 /* [CP] Check Pods Manifest.lock */,
+				0CAF7494292BA43A00532887 /* Sources */,
+				0CAF7495292BA43A00532887 /* Frameworks */,
+				0CAF7496292BA43A00532887 /* Resources */,
+				F607B56C4775BAADCEA74D52 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CAF749A292BA43A00532887 /* PBXTargetDependency */,
+			);
+			name = "ghibli-mvvm-textureUITests";
+			productName = "ghibli-mvvm-textureUITests";
+			productReference = 0CAF7498292BA43A00532887 /* ghibli-mvvm-textureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CAF7470292BA43900532887 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					0CAF7477292BA43900532887 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					0CAF748D292BA43A00532887 = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
+						TestTargetID = 0CAF7477292BA43900532887;
+					};
+					0CAF7497292BA43A00532887 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 0CAF7477292BA43900532887;
+					};
+				};
+			};
+			buildConfigurationList = 0CAF7473292BA43900532887 /* Build configuration list for PBXProject "ghibli-mvvm-texture" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CAF746F292BA43900532887;
+			productRefGroup = 0CAF7479292BA43900532887 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CAF7477292BA43900532887 /* ghibli-mvvm-texture */,
+				0CAF748D292BA43A00532887 /* ghibli-mvvm-textureTests */,
+				0CAF7497292BA43A00532887 /* ghibli-mvvm-textureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CAF7476292BA43900532887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAF7488292BA43A00532887 /* LaunchScreen.storyboard in Resources */,
+				0CAF7485292BA43A00532887 /* Assets.xcassets in Resources */,
+				0CAF7483292BA43900532887 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAF748C292BA43A00532887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAF7496292BA43A00532887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67E045BC24CA9DC64FFF2269 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C1ADF10A6C90CBCC3654644 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ghibli-mvvm-textureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D501B8E79C656E36D781EC56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ghibli-mvvm-texture/Pods-ghibli-mvvm-texture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ghibli-mvvm-texture/Pods-ghibli-mvvm-texture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ghibli-mvvm-texture/Pods-ghibli-mvvm-texture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A7CA5B8D9E23EFDA834032 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ghibli-mvvm-texture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F607B56C4775BAADCEA74D52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests/Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CAF7474292BA43900532887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C109601292C004900639F42 /* Typography.swift in Sources */,
+				0C1095FE292BFE9700639F42 /* MovieCellNode.swift in Sources */,
+				0CCD3469292BD94D009C5EEA /* MovieLoader.swift in Sources */,
+				0CAF7480292BA43900532887 /* MovieViewController.swift in Sources */,
+				0C1095FB292BF68200639F42 /* MovieRoutes.swift in Sources */,
+				0CCD3463292BC8E2009C5EEA /* RemoteMovieLoader.swift in Sources */,
+				0CCD3455292BC283009C5EEA /* MovieViewModel.swift in Sources */,
+				0CCD345F292BC857009C5EEA /* DefaultMovieUseCase.swift in Sources */,
+				0CCD3465292BC91D009C5EEA /* Movie.swift in Sources */,
+				0CCD3458292BC2B8009C5EEA /* ViewModelType.swift in Sources */,
+				0CAF747C292BA43900532887 /* AppDelegate.swift in Sources */,
+				0CCD345D292BC716009C5EEA /* MovieUseCase.swift in Sources */,
+				0CAF747E292BA43900532887 /* SceneDelegate.swift in Sources */,
+				0CCD3467292BCB61009C5EEA /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAF748A292BA43A00532887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAF74B3292BA56500532887 /* MovieViewModelTests.swift in Sources */,
+				0C1095F7292BEE8300639F42 /* MovieUseCaseSpy.swift in Sources */,
+				0CCD346E292BE091009C5EEA /* FakeMovies.swift in Sources */,
+				0CCD3473292BE42D009C5EEA /* MovieUseCaseStub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CAF7494292BA43A00532887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAF749D292BA43A00532887 /* ghibli_mvvm_textureUITests.swift in Sources */,
+				0CAF749F292BA43A00532887 /* ghibli_mvvm_textureUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CAF7490292BA43A00532887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CAF7477292BA43900532887 /* ghibli-mvvm-texture */;
+			targetProxy = 0CAF748F292BA43A00532887 /* PBXContainerItemProxy */;
+		};
+		0CAF749A292BA43A00532887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CAF7477292BA43900532887 /* ghibli-mvvm-texture */;
+			targetProxy = 0CAF7499292BA43A00532887 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CAF7481292BA43900532887 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CAF7482292BA43900532887 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CAF7486292BA43A00532887 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CAF7487292BA43A00532887 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CAF74A0292BA43A00532887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CAF74A1292BA43A00532887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CAF74A3292BA43A00532887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52D6DDD9BB6EECA90F5A5C2 /* Pods-ghibli-mvvm-texture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HA727BMPYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ghibli-mvvm-texture/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wendykurniawan.ghibli-mvvm-texture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CAF74A4292BA43A00532887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0089AD7DB0C05AE3FF1F82 /* Pods-ghibli-mvvm-texture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HA727BMPYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ghibli-mvvm-texture/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wendykurniawan.ghibli-mvvm-texture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0CAF74A6292BA43A00532887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE500CE116CC8E72DF1F4420 /* Pods-ghibli-mvvm-textureTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HA727BMPYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wendykurniawan.ghibli-mvvm-textureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ghibli-mvvm-texture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ghibli-mvvm-texture";
+			};
+			name = Debug;
+		};
+		0CAF74A7292BA43A00532887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17E01C0AAB67B249DB1D9DA /* Pods-ghibli-mvvm-textureTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HA727BMPYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wendykurniawan.ghibli-mvvm-textureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ghibli-mvvm-texture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ghibli-mvvm-texture";
+			};
+			name = Release;
+		};
+		0CAF74A9292BA43A00532887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF08235AA6B2973E01F13FC9 /* Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HA727BMPYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wendykurniawan.ghibli-mvvm-textureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ghibli-mvvm-texture";
+			};
+			name = Debug;
+		};
+		0CAF74AA292BA43A00532887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800A70F3CA67240A95513D0C /* Pods-ghibli-mvvm-texture-ghibli-mvvm-textureUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HA727BMPYK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wendykurniawan.ghibli-mvvm-textureUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ghibli-mvvm-texture";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CAF7473292BA43900532887 /* Build configuration list for PBXProject "ghibli-mvvm-texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAF74A0292BA43A00532887 /* Debug */,
+				0CAF74A1292BA43A00532887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CAF74A2292BA43A00532887 /* Build configuration list for PBXNativeTarget "ghibli-mvvm-texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAF74A3292BA43A00532887 /* Debug */,
+				0CAF74A4292BA43A00532887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CAF74A5292BA43A00532887 /* Build configuration list for PBXNativeTarget "ghibli-mvvm-textureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAF74A6292BA43A00532887 /* Debug */,
+				0CAF74A7292BA43A00532887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CAF74A8292BA43A00532887 /* Build configuration list for PBXNativeTarget "ghibli-mvvm-textureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CAF74A9292BA43A00532887 /* Debug */,
+				0CAF74AA292BA43A00532887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CAF7470292BA43900532887 /* Project object */;
+}

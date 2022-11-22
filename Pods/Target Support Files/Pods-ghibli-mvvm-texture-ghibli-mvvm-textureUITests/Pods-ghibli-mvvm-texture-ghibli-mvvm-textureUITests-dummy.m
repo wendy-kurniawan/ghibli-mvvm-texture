@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_ghibli_mvvm_texture_ghibli_mvvm_textureUITests : NSObject
+@end
+@implementation PodsDummy_Pods_ghibli_mvvm_texture_ghibli_mvvm_textureUITests
+@end
